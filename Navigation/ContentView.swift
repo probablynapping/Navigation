@@ -11,10 +11,17 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             VStack{
-                Text("This is the root view")
+                Text("This is the Home!")
                 NavigationLink(destination: SecondView()) {
-                    Text("Click Me!")
+                    Text("About Us")
                 }
+                NavigationLink(destination: Contact()) {
+                    Text("Contact")
+                }
+                NavigationLink(destination: Help()) {
+                    Text("Help")
+                }
+
             }
             
             .navigationTitle("Home")
